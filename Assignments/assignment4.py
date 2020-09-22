@@ -12,3 +12,4 @@ for n in range(lower, upper +1 ):
 
 print("The sum is: ", sum)
 
+#NEED A LOOP
