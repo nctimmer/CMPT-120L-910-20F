@@ -1,6 +1,7 @@
 #Assignment 4
 #Noah Timmer
 
-end = input("Enter an end value for the range:")
+lower = int(input("Enter the lower number of the range (1):"))
+upper = int(input("Enter the upper number of the range:"))
 
 #NEED A LOOP
