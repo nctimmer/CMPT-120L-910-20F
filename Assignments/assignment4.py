@@ -14,5 +14,5 @@ print("Sum:", sum)
 
 def main():
     again = int(input("Enter a random number: "))
-    function1
+    sum = sum + again
 
