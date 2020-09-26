@@ -13,4 +13,6 @@ for x in range(min, max + 1):
 print("Sum:", sum)
 
 def main():
-    second = int(input("Enter a random number: "))
+    again = int(input("Enter a random number: "))
+    function1
+
