@@ -9,7 +9,12 @@ def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
     checking = 1590.80
 
+    CHECKING_PERCENT = float(0.85)
+    SAVINGS_PERCENT = float(0.15)
+
+    #0.85 
     checking += (transations[0] * 0.85)
+    #0.15
     savings += (transations[0] * 0.15)
     
     checking += transations[1]
@@ -18,10 +23,14 @@ def saturdays_bank_transactions(transations) -> (float, float):
     
     checking += transations[3]
 
+    #0.85
     checking += (transations[4] * 0.85)
+    #0.15
     savings += (transations[4] * 0.15)
     
+    #0.85
     checking += (transations[5] * 0.85)
+    #0.15
     savings += (transations[5] * 0.15)
 
     checking += transations[6]
