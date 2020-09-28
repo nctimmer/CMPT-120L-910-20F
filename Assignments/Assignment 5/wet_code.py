@@ -5,17 +5,15 @@
 # All negative numbers gets taken out of the checking account.
 
 
-def moneyMoves(transations):
-    transations = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
-    for money in transations:
-        checking += transation[money]
-
 def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
     checking = 1590.80
 
     CHECKING_PERCENT = float(0.85)
     SAVINGS_PERCENT = float(0.15)
+
+    for i in range 11:
+
 
     checking += (transations[0] * CHECKING_PERCENT)
     savings += (transations[0] * SAVINGS_PERCENT)
