@@ -6,7 +6,8 @@
 
 
 def moneyMoves(transations):
-    
+    for money in transations:
+        checking += transation[money]
 
 def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
