@@ -5,6 +5,7 @@
 # All negative numbers gets taken out of the checking account.
 
 # checking += transations[1]
+#LOOKING FOR: CHECKING $2007.44, SAVINGS $1456.20
 def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
     checking = 1590.80
