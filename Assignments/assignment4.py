@@ -1,7 +1,7 @@
 #Assignment 4
 #Noah Timmer
 
-def function1():
+def function1(self):
 min = int(input("Enter the lower number of the range (1): "))
 max = int(input("Enter the upper number of the range: "))
 
