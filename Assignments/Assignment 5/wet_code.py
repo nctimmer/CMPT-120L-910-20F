@@ -4,7 +4,7 @@
 # Some things to note. When we have a positive number that gets split up and 85% goes into checking and 15% goes into savings. 
 # All negative numbers gets taken out of the checking account.
 
-
+# checking += transations[1]
 def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
     checking = 1590.80
@@ -12,16 +12,11 @@ def saturdays_bank_transactions(transations) -> (float, float):
     CHECKING_PERCENT = float(0.85)
     SAVINGS_PERCENT = float(0.15)
 
-    for i in range(0,11):
-
-
-
     checking += (transations[0] * CHECKING_PERCENT)
     savings += (transations[0] * SAVINGS_PERCENT)
     
-    checking += transations[1]
-    checking += transations[2]
-    checking += transations[3]
+    for i in range(1,3):
+        checking += transations[i]
 
     checking += (transations[4] * CHECKING_PERCENT)
     savings += (transations[4] * SAVINGS_PERCENT)
@@ -29,12 +24,8 @@ def saturdays_bank_transactions(transations) -> (float, float):
     checking += (transations[5] * CHECKING_PERCENT)
     savings += (transations[5] * SAVINGS_PERCENT)
 
-    checking += transations[6]
-    checking += transations[7]
-    checking += transations[8]
-    checking += transations[9]
-    checking += transations[10]
-
+    for i in range(6,10):
+        checking += transations[i]
 
     return checking, savings
 
