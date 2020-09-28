@@ -5,6 +5,10 @@
 # All negative numbers gets taken out of the checking account.
 
 
+def __init__(self, CHECKING_PERCENT: float, SAVINGS_PERCENT: float):
+    self.CHECKING_PERCENT = CHECKING_PERCENT
+    self.SAVINGS_PERCENT = SAVINGS_PERCENT
+
 def saturdays_bank_transactions(transations) -> (float, float):
     savings = 1096.25
     checking = 1590.80
