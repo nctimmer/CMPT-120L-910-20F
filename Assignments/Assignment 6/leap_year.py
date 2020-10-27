@@ -1,7 +1,5 @@
 def leap_year(year):
     # Write your code here. 
-    years = int(input("Enter the year:" ))
-
     if years % 4 == 0 and year % 100 != 0:
         print(years, "is a Leap Year!")
     elif years % 100 == 0:
