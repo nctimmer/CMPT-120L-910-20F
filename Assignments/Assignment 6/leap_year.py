@@ -9,6 +9,11 @@ def leap_year(year):
     else:
         print(year, "is not a Leap Year")
 
+    if (year % 4) == 0:
+        if (year % 100) == 0:
+            if (year 400) == 0:
+                
+
 
 if __name__ == "__main__":
     years = [2000, 1994, 1912, 3002, 1700, 1400]
