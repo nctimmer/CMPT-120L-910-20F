@@ -1,9 +1,9 @@
 def leap_year(year):
     # Write your code here. 
-    if year % 4 == 0 and year % 100 == 0:
+    if year % 4 == 0 and year % 100 != 0:
         print(year, "is a Leap Year!")
     elif year % 100 == 0:
-        print(year, "is a Leap Year!")
+        print(year, "is not a Leap Year.")
     elif year % 400 == 0:
         print(year, "is a Leap Year!")
     else:
