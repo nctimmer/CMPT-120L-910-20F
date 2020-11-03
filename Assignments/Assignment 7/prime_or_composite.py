@@ -7,7 +7,9 @@ def prime_or_composite(number):
     - Take in a parameter called number and return “Prime” or “Composite”
     """
     if number > 1:
-        for i in range(2, number)
+        for i in range(2, number):
+            if(number % 1) == 0:
+                print(number, "is Composite")
     pass
 
 if __name__ == "__main__":
