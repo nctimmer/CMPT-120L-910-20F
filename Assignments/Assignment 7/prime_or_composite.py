@@ -14,7 +14,6 @@ def prime_or_composite(number):
             print(number, "is Prime")
     else:
         print(number, "is Composite")
-    pass
 
 if __name__ == "__main__":
     numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201]
