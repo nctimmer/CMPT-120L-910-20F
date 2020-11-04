@@ -8,7 +8,7 @@ def prime_or_composite(number):
     """
     if number > 1:
         for i in range(2, number):
-            if(number % 1) == 0:
+            if(number % i) == 0:
                 print(number, "is Composite")
         else:
             print(number, "is Prime")
