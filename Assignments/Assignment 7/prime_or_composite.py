@@ -12,6 +12,8 @@ def prime_or_composite(number):
                 print(number, "is Composite")
         else:
             print(number, "is Prime")
+    else:
+        print(number, "is Composite")
     pass
 
 if __name__ == "__main__":
