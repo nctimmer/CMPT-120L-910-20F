@@ -9,14 +9,14 @@ def prime_or_composite(number):
     if number > 1:
         for i in range(2,number):
             if(number % i) == 0:
-                print(number, "is Composite")
+                return(number, "is Composite")
         else:
-            print(number, "is Prime")
+            return(number, "is Prime")
     else:
-        print(number, "is Composite")
+        return(number, "is Composite")
 
 if __name__ == "__main__":
-    numbers = [-7, 1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201, 47055833459]
+    numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201,]
     # If you want to test the efficency of your algorithm add this number to the array above -7
     # If you want to test the efficency of your algorithm add this number to the array above 47055833459
     answers = []
