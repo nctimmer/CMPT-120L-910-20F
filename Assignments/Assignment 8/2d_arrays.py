@@ -10,8 +10,8 @@ def sum_2d_array(two_d_array):
     """
     total = 0
 
-    for x in two_d_array:
-        total += x
+    for number in two_d_array:
+        total += number
 
     return total
 
