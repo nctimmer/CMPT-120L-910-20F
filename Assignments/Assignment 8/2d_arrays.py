@@ -12,8 +12,8 @@ def sum_2d_array(two_d_array):
 
     for x in two_d_array:
         total += x
-        
-    return(total)
+
+    return total
 
 if __name__ == "__main__":
     two_d_array = [
