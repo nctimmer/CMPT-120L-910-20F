@@ -10,7 +10,7 @@ def sum_2d_array(two_d_array):
     """
     sum = 0
     for x in two_d_array:
-        sum = sum + x
+        sum += x
     return(sum)
 
 if __name__ == "__main__":
