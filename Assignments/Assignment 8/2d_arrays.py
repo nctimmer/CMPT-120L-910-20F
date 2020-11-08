@@ -9,8 +9,10 @@ def sum_2d_array(two_d_array):
     - If a sub array is empty the sum is 0
     """
     total = 0
+
     for x in two_d_array:
         total += x
+        
     return(total)
 
 if __name__ == "__main__":
