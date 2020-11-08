@@ -9,7 +9,7 @@ def sum_2d_array(two_d_array):
     - If a sub array is empty the sum is 0
     """
     sum = 0
-    for x in arr:
+    for x in two_d_array:
         sum = sum + i
     return(sum)
 
