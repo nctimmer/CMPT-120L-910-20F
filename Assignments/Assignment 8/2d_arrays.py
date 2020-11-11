@@ -15,6 +15,8 @@ def sum_2d_array(two_d_array):
 
     return total
 
+print(sum(two_d_array))
+
 if __name__ == "__main__":
     two_d_array = [
         [2, 6, 7, 98, 3, 434, 2, 4, 2],
