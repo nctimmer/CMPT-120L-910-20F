@@ -1,19 +1,13 @@
+import numpy as np
+
 def sum_2d_array(two_d_array):
-    """
-    - Add code in the defined function to sum up the internal arrays. Returning an array of the sums.
     
-    - Your input will be a 2d array
-    
-    - Output should be a 1d array
-    
-    - If a sub array is empty the sum is 0
-    """
     total = 0
 
     for number in two_d_array:
-        total += number
+        total += sum(number)
 
-    return total
+    return total 
 
 if __name__ == "__main__":
     two_d_array = [
@@ -28,3 +22,4 @@ if __name__ == "__main__":
     answers = sum_2d_array(two_d_array)
     
     print(answers)
+    result = two_d_array.flatten()
