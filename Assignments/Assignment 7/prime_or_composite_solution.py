@@ -6,27 +6,27 @@ def prime_or_composite(number):
     
     - Take in a parameter called number and return “Prime” or “Composite”
     """
-    if number > 1:
-        for i in range(2,number):
-            if(number % i) == 0:
-                return(number, "is Composite")
-        else:
-            return(number, "is Prime")
+    from math import sqrt
+    from math import ceil
+
+    # print("Please Wait...")
+    number = int(number)
+    is_prime = True
+    if number <= 1:  
+        is_prime = False
     else:
-        return(number, "is Composite")
+        for divisor in range(2, ceil(sqrt(number))):
+            if number % divisor == 0:
+                is_prime = False
+                break
+    return("Prime" if is_prime else "Composite")
 
 if __name__ == "__main__":
-
-    numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201,]
-    # If you want to test the efficency of your algorithm add this number to the array above -7
-    # If you want to test the efficency of your algorithm add this number to the array above 47055833459
-
-    numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201]
+    numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201, -7, 47055833459]
     # Optional: If you want to test the efficency of your algorithm add this number to the array above -7
     # Optional: If you want to test the efficency of your algorithm add this number to the array above 47055833459
-
     answers = []
     for number in numbers:
         answers.append(prime_or_composite(number))
-
+    
     print(answers)
