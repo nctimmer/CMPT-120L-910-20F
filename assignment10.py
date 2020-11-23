@@ -1,6 +1,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-r", "--reverse", help="This will reverse the order of the array", action="store_true")
+args = parser.parse_args() 
 
 import logging
 logger = logging.getLogger()
