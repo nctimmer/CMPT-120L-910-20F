@@ -14,10 +14,10 @@ app.logger.error('An error occurred')
 def about():
     return render_template("about.html")
 
-@app.route("/contact")
+@app.route('/contact')
 def contact():
     return render_template("contact.html")
 
-@app.route("/personality")
+@app.route('/personality')
 def personality():
     return render_template("personality.html")
