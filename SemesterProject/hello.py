@@ -21,3 +21,6 @@ def contact():
 @app.route('/personality/')
 def personality():
     return render_template("personality.html")
+
+if __name__ == '__main__':
+    app.run(debug=True)
