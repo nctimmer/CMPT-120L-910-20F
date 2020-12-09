@@ -30,14 +30,23 @@ app.logger.error('An error occurred')
 @app.route('/about/')
 def about():
     return render_template("about.html")
+app.logger.debug('400')
+app.logger.warning('A warning occurred (%d apples)', 42)
+app.logger.error('An error occurred')
 
 @app.route('/contact/')
 def contact():
     return render_template("contact.html")
+app.logger.debug('400')
+app.logger.warning('A warning occurred (%d apples)', 42)
+app.logger.error('An error occurred')
 
 @app.route('/personality/')
 def personality():
     return render_template("personality.html")
+app.logger.debug('400')
+app.logger.warning('A warning occurred (%d apples)', 42)
+app.logger.error('An error occurred')
 
 if __name__ == '__main__':
     app.run(debug=True)
