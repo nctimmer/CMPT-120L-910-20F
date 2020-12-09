@@ -20,22 +20,27 @@ dictConfig({
 
 app = Flask(__name__)
 
+#home page
 @app.route('/')
 def index():
     return render_template("index.html")
 
+#about page
 @app.route('/about/')
 def about():
     return render_template("about.html")
 
+#contact page
 @app.route('/contact/')
 def contact():
     return render_template("contact.html")
 
+#personality page
 @app.route('/personality/')
 def personality():
     return render_template("personality.html")
 
+#404 error non-existent page
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template("page_not_found.html"), 404
