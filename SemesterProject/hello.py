@@ -23,30 +23,22 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template("index.html")
-app.logger.debug('400')
-app.logger.warning('A warning occurred (%d apples)', 42)
-app.logger.error('An error occurred')
 
 @app.route('/about/')
 def about():
     return render_template("about.html")
-app.logger.debug('400')
-app.logger.warning('A warning occurred (%d apples)', 42)
-app.logger.error('An error occurred')
 
 @app.route('/contact/')
 def contact():
     return render_template("contact.html")
-app.logger.debug('400')
-app.logger.warning('A warning occurred (%d apples)', 42)
-app.logger.error('An error occurred')
 
 @app.route('/personality/')
 def personality():
     return render_template("personality.html")
-app.logger.debug('400')
-app.logger.warning('A warning occurred (%d apples)', 42)
-app.logger.error('An error occurred')
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("page_not_found.html"), 404
 
 if __name__ == '__main__':
     app.run(debug=True)
