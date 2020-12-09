@@ -1,8 +1,7 @@
 {
 
-    "python.pythonPath": "/Users/noah/opt/anaconda3/bin/python"
+    "python.pythonPath": "/Users/noah/opt/anaconda3/bin/python", 
 
-    "python.pythonPath": "/usr/local/bin/python3",
     "jupyter.jupyterServerType": "local"
 
 }
